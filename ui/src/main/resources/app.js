@@ -14,7 +14,7 @@
          };
     
          $scope.put = function() {
-            var toSend = {task: $scope.task};
+            var toSend = $scope.task;
             $http.put(tasksBase + "/" + $scope.task.id, toSend)
             .success(function (response) {$scope.reload();});
 	    

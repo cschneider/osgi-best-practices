@@ -48,9 +48,14 @@ public class TaskResource {
 	private TaskDTO toDTO(Task task) {
 		return Converters.standardConverter().convert(task).sourceAsBean().to(TaskDTO.class);
 	}
+	
+	private Task fromDTO(TaskDTO taskDTO) {
+		return Converters.standardConverter().convert(taskDTO).targetAsBean().to(Task.class);
+	}
 
     @POST
-    public Response addTask(Task task) {
+    public Response addTask(TaskDTO taskDTO) {
+    	Task task = fromDTO(taskDTO);
         taskService.addTask(task);
         URI taskURI = uri.getRequestUriBuilder().path(TaskResource.class, "getTask").build(task.getId());
         return Response.created(taskURI).build();
@@ -64,7 +69,8 @@ public class TaskResource {
 
     @PUT
     @Path("{id}")
-    public void updateTask(@PathParam("id") Integer id, Task task) {
+    public void updateTask(@PathParam("id") Integer id, TaskDTO taskDTO) {
+    	Task task = fromDTO(taskDTO);
         task.setId(id);
         taskService.updateTask(task);
     }
