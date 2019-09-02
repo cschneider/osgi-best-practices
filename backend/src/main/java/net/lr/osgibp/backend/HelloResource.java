@@ -8,10 +8,10 @@ import org.osgi.service.jaxrs.whiteboard.propertytypes.JaxrsResource;
 
 @Component(service = HelloResource.class)
 @JaxrsResource
+@Path("/hello")
 public class HelloResource {
 
 	@GET
-	@Path("/hello")
 	public String index() {
 		return "Hello world";
 	}

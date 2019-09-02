@@ -8,7 +8,12 @@
     </appender>
 
     <!-- log all Bundle events -->
+    <!-- 
     <logger name="Events.Bundle" level="TRACE"/>
+     -->
+     
+     <logger name="org.apache" level="INFO"/>
+     
 
     <root level="INFO">
         <appender-ref ref="STDOUT" />
