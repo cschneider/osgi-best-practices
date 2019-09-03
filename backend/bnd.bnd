@@ -1,0 +1,2 @@
+# Add jackson json support
+Require-Bundle: org.apache.aries.jax.rs.jackson
