@@ -17,6 +17,12 @@ The design follows current best practices for OSGi R7 applications.
 # Run
 
     cd app; java -jar target/app.jar
+    
+# Test
+
+   http://localhost:8080/tasklist/index.html
+   
+   http://localhost:8080/tasks
 
 # Resources
 
@@ -24,3 +30,4 @@ The design follows current best practices for OSGi R7 applications.
 * [Some hints to boost your productivity with declarative services](https://liquid-reality.de/2016/09/26/hints-ds.html)
 * [Bnd maven plugins documentation](https://github.com/bndtools/bnd/tree/master/maven)
 * [OSGi R7 Highlights JAX-RS Whiteboard](https://blog.osgi.org/2018/03/osgi-r7-highlights-jax-rs-whiteboard.html)
+* [Best practices for Restul apis](https://blog.mwaysolutions.com/2014/06/05/10-best-practices-for-better-restful-api/)
