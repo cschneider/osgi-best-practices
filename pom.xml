@@ -119,5 +119,6 @@
 		<module>backend</module>
 		<module>app</module>
 		<module>ui</module>
+		<module>sling-example</module>
 	</modules>
 </project>

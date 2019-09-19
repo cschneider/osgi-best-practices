@@ -21,6 +21,11 @@
 			<artifactId>net.lr.osgibp.ui</artifactId>
 			<version>${project.version}</version>
 		</dependency>
+      	<dependency>
+			<groupId>net.lr.osgibp</groupId>
+			<artifactId>net.lr.osgibp.sling-example</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 
 		<!-- Basic Felix bundles. This is more than we strictly need but the resolver 
 			works with the runrequires in the bndrun file to make sure we only use the 
@@ -40,6 +45,7 @@
 			<artifactId>org.apache.felix.configadmin</artifactId>
 			<version>1.9.16</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.apache.felix</groupId>
 			<artifactId>org.apache.felix.metatype</artifactId>
@@ -199,6 +205,132 @@
 			<version>2.0.0</version>
 		</dependency>
 		
+		
+		<!-- Sling core -->
+		<dependency>
+			<groupId>org.apache.sling</groupId>
+			<artifactId>org.apache.sling.api</artifactId>
+			<version>2.20.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.sling</groupId>
+			<artifactId>org.apache.sling.auth.core</artifactId>
+			<version>1.4.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.sling</groupId>
+			<artifactId>org.apache.sling.engine</artifactId>
+			<version>2.6.18</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.sling</groupId>
+			<artifactId>org.apache.sling.resourceresolver</artifactId>
+			<version>1.6.12</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.sling</groupId>
+			<artifactId>org.apache.sling.serviceusermapper</artifactId>
+			<version>1.4.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.sling</groupId>
+			<artifactId>org.apache.sling.settings</artifactId>
+			<version>1.3.10</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.sling</groupId>
+			<artifactId>org.apache.sling.servlets.get</artifactId>
+			<version>2.1.40</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.sling</groupId>
+			<artifactId>org.apache.sling.servlets.resolver</artifactId>
+			<version>2.5.6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.sling</groupId>
+			<artifactId>org.apache.sling.xss</artifactId>
+			<version>2.1.8</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.sling</groupId>
+			<artifactId>org.apache.sling.scripting.api</artifactId>
+			<version>2.2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.sling</groupId>
+			<artifactId>org.apache.sling.scripting.core</artifactId>
+			<version>2.0.58</version>
+		</dependency>
+
+		<!-- Apache Sling Commons -->
+	    <dependency>
+	    	<groupId>org.apache.sling</groupId>
+	    	<artifactId>org.apache.sling.commons.johnzon</artifactId>
+	    	<version>1.1.2</version>
+	    </dependency>
+	    <dependency>
+	    	<groupId>org.apache.sling</groupId>
+	    	<artifactId>org.apache.sling.commons.mime</artifactId>
+	    	<version>2.2.0</version>
+	    </dependency>
+	    <dependency>
+	    	<groupId>org.apache.sling</groupId>
+	    	<artifactId>org.apache.sling.commons.osgi</artifactId>
+	    	<version>2.4.0</version>
+	    </dependency>
+	    <dependency>
+	    	<groupId>org.apache.sling</groupId>
+	    	<artifactId>org.apache.sling.commons.threads</artifactId>
+	    	<version>3.2.18</version>
+	    </dependency>
+	    <dependency>
+	    	<groupId>commons-collections</groupId>
+	    	<artifactId>commons-collections</artifactId>
+	    	<version>3.2.2</version>
+	    </dependency>
+	    <dependency>
+	    	<groupId>org.apache.commons</groupId>
+	    	<artifactId>commons-collections4</artifactId>
+	    	<version>4.4</version>
+	    </dependency>
+	    <dependency>
+	    	<groupId>commons-codec</groupId>
+	    	<artifactId>commons-codec</artifactId>
+	    	<version>1.13</version>
+	    </dependency>
+	    <dependency>
+	    	<groupId>org.slf4j</groupId>
+	    	<artifactId>log4j-over-slf4j</artifactId>
+	    	<version>1.7.25</version>
+	    </dependency>
+	    <dependency>
+	    	<groupId>org.slf4j</groupId>
+	    	<artifactId>jcl-over-slf4j</artifactId>
+	    	<version>1.7.25</version>
+	    </dependency>
+	    <dependency>
+	    	<groupId>commons-logging</groupId>
+	    	<artifactId>commons-logging</artifactId>
+	    	<version>1.1.3</version>
+	    </dependency>
+  	    <dependency>
+  	    	<groupId>org.apache.httpcomponents</groupId>
+  	    	<artifactId>httpclient-osgi</artifactId>
+  	    	<version>4.5.6</version>
+  	    </dependency>
+  	    <dependency>
+  	    	<groupId>org.apache.httpcomponents</groupId>
+  	    	<artifactId>httpcore-osgi</artifactId>
+  	    	<version>4.4.10</version>
+  	    </dependency>
+  	    <dependency>
+  	    	<groupId>org.apache.sling</groupId>
+  	    	<artifactId>
+  	    		org.apache.sling.mdresourceprovider
+  	    	</artifactId>
+  	    	<version>0.0.1-SNAPSHOT</version>
+  	    </dependency>
 	</dependencies>
 
 	<build>
