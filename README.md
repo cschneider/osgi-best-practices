@@ -18,6 +18,15 @@ The design follows current best practices for OSGi R7 applications.
 
     cd app; java -jar target/app.jar
     
+# Alternatively run in Apache Karaf
+
+Download and run Apache Karaf 4.2.6
+
+    feature:repo-add mvn:org.apache.aries.jax.rs/org.apache.aries.jax.rs.features/1.0.5/xml
+    feature:install aries-jax-rs-whiteboard aries-jax-rs-whiteboard-jackson war
+    install -s mvn:net.lr.osgibp/net.lr.osgibp.backend
+    install -s mvn:net.lr.osgibp/net.lr.osgibp.ui/1.0.0-SNAPSHOT
+    
 # Test
 
    http://localhost:8080/tasklist/index.html
