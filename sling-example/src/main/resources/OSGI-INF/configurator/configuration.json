@@ -1,0 +1,14 @@
+{
+    ":configurator:resource-version" : 1,
+    ":configurator:symbolic-name" : "net.lr.example.sling",
+    ":configurator:version" : "1.0.0",
+
+    "org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl":{
+        "resource.resolver.required.providernames":""
+    },
+
+    "org.apache.sling.mdresource.impl.MarkdownResourceProvider~default": {
+      "provider.file" : "/Users/cschneid/checkout/experience-manager-core-components.en",
+      "provider.root" : "/help"
+    }
+}
