@@ -2,14 +2,15 @@ package net.lr.tasklist.model;
 
 import java.util.Collection;
 
+/**
+ * Manages a set of tasks by id
+ */
 public interface TaskService {
-    Task getTask(Integer id);
+    Task getById(Integer id);
 
-    void addTask(Task task);
+    void addOrUpdate(Task task);
 
-    void updateTask(Task task);
-
-    void deleteTask(Integer id);
+    void delete(Integer id);
     
-    Collection<Task> getTasks();
+    Collection<Task> getAll();
 }

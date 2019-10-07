@@ -39,13 +39,13 @@ public class TaskResource {
     @GET
     @Path("{id}")
     public Response getTask(@PathParam("id") Integer id) {
-        Task task = taskService.getTask(id);
+        Task task = taskService.getById(id);
         return task == null ? Response.status(Status.NOT_FOUND).build() : Response.ok(task).build();
     }
 
     @POST
     public Response addTask(Task task) {
-        taskService.addTask(task);
+        taskService.addOrUpdate(task);
         URI taskURI = uri.getRequestUriBuilder().path(TaskResource.class, "getTask").build(task.getId());
         return Response.created(taskURI).build();
     }
@@ -53,20 +53,22 @@ public class TaskResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Collection<Task> getTasks() {
-        return taskService.getTasks();
+        return taskService.getAll();
     }
 
     @PUT
     @Path("{id}")
     public void updateTask(@PathParam("id") Integer id, Task task) {
-        task.setId(id);
-        taskService.updateTask(task);
+        if (task.getId() != id) {
+            throw new IllegalStateException("Id from path and content must be the same");
+        }
+        taskService.addOrUpdate(task);
     }
     
     @DELETE
     @Path("{id}")
     public void deleteTask(@PathParam("id") Integer id) {
-        taskService.deleteTask(id);
+        taskService.delete(id);
     }
 
 }
