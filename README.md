@@ -35,6 +35,7 @@ Download and run Apache Karaf 4.2.6
 
 # Resources
 
+* [OSGi enroute microservice example](https://github.com/osgi/osgi.enroute/tree/master/examples/microservice) - Great example for a rest service. It also shows how to do JPA in OSGi.
 * [Sling bundle parent](https://github.com/apache/sling-parent/tree/master/sling-bundle-parent) - Contains many of the best practices
 * [Some hints to boost your productivity with declarative services](https://liquid-reality.de/2016/09/26/hints-ds.html)
 * [Bnd maven plugins documentation](https://github.com/bndtools/bnd/tree/master/maven)
