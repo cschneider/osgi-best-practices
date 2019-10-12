@@ -59,7 +59,7 @@ public class TaskResource {
     @PUT
     @Path("{id}")
     public void updateTask(@PathParam("id") Integer id, Task task) {
-        if (task.getId() != id) {
+        if (!task.getId().equals(id)) {
             throw new IllegalStateException("Id from path and content must be the same");
         }
         taskService.addOrUpdate(task);
