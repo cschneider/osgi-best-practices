@@ -81,6 +81,7 @@
             </plugin>
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.9</version>
                 <configuration>
                     <systemPropertyVariables>
                         <pax.exam.karaf.version>${dependency.karaf.version}</pax.exam.karaf.version>
