@@ -3,6 +3,7 @@ package net.lr.osgibp.it;
 import static org.ops4j.pax.exam.CoreOptions.maven;
 import static org.ops4j.pax.exam.CoreOptions.mavenBundle;
 import static org.ops4j.pax.exam.CoreOptions.systemProperty;
+import static org.ops4j.pax.exam.CoreOptions.when;
 import static org.ops4j.pax.exam.karaf.options.KarafDistributionOption.configureConsole;
 import static org.ops4j.pax.exam.karaf.options.KarafDistributionOption.features;
 import static org.ops4j.pax.exam.karaf.options.KarafDistributionOption.karafDistributionConfiguration;
@@ -33,6 +34,7 @@ public class BaseITest {
     }
 
     public Option[] config() {
+        String localRepo = System.getProperty("maven.repo.local", "");
         return new Option[] //
         {
                 // KarafDistributionOption.debugConfiguration("5005", true),
@@ -41,6 +43,7 @@ public class BaseITest {
                 systemProperty("karaf.log").value("log"), // Workaround for karaf 4.2.7 in exam
                 keepRuntimeFolder(), // Allows to easily introspect after run
                 configureConsole().ignoreLocalConsole(),
+                when(localRepo.length() > 0).useOptions(systemProperty("org.ops4j.pax.url.mvn.localRepository").value(localRepo)),
 
                 // Awaitility support
                 mvn("org.awaitility", "awaitility"),
