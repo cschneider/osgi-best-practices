@@ -44,7 +44,7 @@ public class BaseITest {
 
                 // Awaitility support
                 mvn("org.awaitility", "awaitility"),
-                mvn("org.hamcrest", "hamcrest"),
+                mvn("org.apache.servicemix.bundles", "org.apache.servicemix.bundles.hamcrest"),
 
                 // This works even better if you define a feature for your own project
                 features(ariesJaxRsRepo, "aries-jax-rs-whiteboard", "aries-jax-rs-whiteboard-jackson"), //
