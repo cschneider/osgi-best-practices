@@ -4,8 +4,6 @@ index: target/index.xml;name="app"
 
 -resolve.effective: active;skip:="osgi.service"
 
-Test-Cases: ${classes;CONCRETE;PUBLIC;NAMED;*Test}
-
 -runproperties: logback.configurationFile=file:${.}/logback.xml
 
 -runfw: org.apache.felix.framework
@@ -38,6 +36,5 @@ Test-Cases: ${classes;CONCRETE;PUBLIC;NAMED;*Test}
 	com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider;version='[2.9.6,2.9.7)',\
 	com.fasterxml.jackson.module.jackson-module-jaxb-annotations;version='[2.9.6,2.9.7)',\
 	org.apache.aries.jax.rs.jackson;version='[1.0.2,1.0.3)',\
-	javax.ws.rs-api;version='[2.1.0,2.1.1)',\
 	net.lr.osgibp.app;version='[1.0.0,1.0.1)',\
 	org.apache.servicemix.bundles.junit;version='[4.12.0,4.12.1)'

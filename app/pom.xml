@@ -200,15 +200,6 @@
         <plugins>
             <plugin>
                 <groupId>biz.aQute.bnd</groupId>
-                <artifactId>bnd-maven-plugin</artifactId>
-                <version>${bnd.version}</version>
-                <configuration>
-                    <bndfile>integration-test.bndrun</bndfile>
-                </configuration>
-            </plugin>
-
-            <plugin>
-                <groupId>biz.aQute.bnd</groupId>
                 <artifactId>bnd-indexer-maven-plugin</artifactId>
                 <version>${bnd.version}</version>
                 <configuration>
@@ -230,10 +221,6 @@
                 <version>${bnd.version}</version>
                 <configuration>
                     <failOnChanges>false</failOnChanges>
-                    <bndruns>
-                        <bndrun>app.bndrun</bndrun>
-                        <bndrun>integration-test.bndrun</bndrun>
-                    </bndruns>
                 </configuration>
                 <executions>
                     <execution>
