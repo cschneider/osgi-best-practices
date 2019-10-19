@@ -241,6 +241,23 @@
                         <goals>
                             <goal>resolve</goal>
                         </goals>
+                        <configuration>
+                            <bndruns>
+                                <bndrun>app.bndrun</bndrun>
+                            </bndruns>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>resolve-test</id>
+                        <phase>pre-integration-test</phase>
+                        <goals>
+                            <goal>resolve</goal>
+                        </goals>
+                        <configuration>
+                            <bndruns>
+                                <bndrun>integration-test.bndrun</bndrun>
+                            </bndruns>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
@@ -270,6 +287,14 @@
                         <bndrun>integration-test.bndrun</bndrun>
                     </bndruns>
                 </configuration>
+                <executions>
+                    <execution>
+                        <id>testing</id>
+                        <goals>
+                            <goal>testing</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
