@@ -42,4 +42,11 @@ Download and run Apache Karaf 4.2.6
 * [OSGi R7 Highlights JAX-RS Whiteboard](https://blog.osgi.org/2018/03/osgi-r7-highlights-jax-rs-whiteboard.html)
 * [Best practices for Restul apis](https://blog.mwaysolutions.com/2014/06/05/10-best-practices-for-better-restful-api/)
 * [Pure Annotation-Driven Bundle Development](https://virtual.osgiusers.org/2018/10/pure-annotation-driven-dev)
+
+## Testing
+
+* [Kent Beck - Properties of valuable tests](https://medium.com/@kentbeck_7670/test-desiderata-94150638a4b3)
 * [Pax exam](https://ops4j1.jira.com/wiki/spaces/PAXEXAM4/overview)
+* [Awaitility](https://github.com/awaitility/awaitility/wiki)
+
+* [Testcontainers](https://www.testcontainers.org/)
