@@ -3,6 +3,8 @@
 OSGi application with an angular UI, REST Service and OSGi service.
 The design follows current best practices for OSGi R7 applications. 
 
+[Slides for eclipsecon 2109 talk "Testing OSGi applications"](https://de.slideshare.net/ChristianSchneider3/eclipsecon-2019-testing-osgi-applications)
+
 # Modules
 
 * parent - Defines common dependencies and the build of OSGi bundles
