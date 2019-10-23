@@ -1,41 +1,21 @@
 package net.lr.osgibp.app;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
 
-import org.junit.After;
-import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.FrameworkUtil;
-import org.osgi.util.tracker.ServiceTracker;
 
 import net.lr.tasklist.model.Task;
 import net.lr.tasklist.model.TaskService;
 
 public class RestServiceIntegrationTest {
 
-    private final Bundle bundle = FrameworkUtil.getBundle(this.getClass());
-    
-    private ServiceTracker<TaskService, TaskService> taskServiceTracker;
+    @Rule
+    public ServiceRule service = new ServiceRule();
 
-    private TaskService taskService;
-
-    @Before
-    public void setUp() throws Exception {
-        assertNotNull("OSGi Bundle tests must be run inside an OSGi framework", bundle);
-        taskServiceTracker = new ServiceTracker<>(bundle.getBundleContext(), TaskService.class, null);
-        taskServiceTracker.open();
-        taskService = taskServiceTracker.waitForService(1000);
-    }
-    
-    @After
-    public void tearDown() throws Exception {
-        taskServiceTracker.close();
-    }
-    
     @Test
     public void testGet() throws Exception {
+        TaskService taskService = service.require(TaskService.class);
         Task task = taskService.getById(1);
 
         assertEquals(1, task.getId().intValue());

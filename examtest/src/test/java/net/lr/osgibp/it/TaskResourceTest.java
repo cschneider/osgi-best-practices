@@ -16,6 +16,8 @@ package net.lr.osgibp.it;
 import static org.awaitility.Awaitility.await;
 import static org.hamcrest.Matchers.notNullValue;
 
+import java.util.concurrent.TimeUnit;
+
 import javax.inject.Inject;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
@@ -55,7 +57,7 @@ public class TaskResourceTest extends BaseITest {
     
     @Test
     public void testGetAll() {
-        Response response = await().until(this::getAll, notNullValue());
+        Response response = await().atMost(20, TimeUnit.SECONDS).until(this::getAll, notNullValue());
         log.info(response.getEntity().toString());
     }
 
