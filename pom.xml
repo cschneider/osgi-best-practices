@@ -19,11 +19,6 @@
             <version>1.7.21</version>
         </dependency>
         <dependency>
-            <groupId>org.apache.servicemix.specs</groupId>
-            <artifactId>org.apache.servicemix.specs.json-api-1.1</artifactId>
-            <version>2.9.0</version>
-        </dependency>
-        <dependency>
             <groupId>org.osgi</groupId>
             <artifactId>osgi.annotation</artifactId>
             <version>7.0.0</version>
