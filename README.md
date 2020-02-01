@@ -31,9 +31,9 @@ Download and run Apache Karaf 4.2.6
     
 # Test
 
-   http://localhost:8080/tasklist/index.html
+   http://localhost:8181/tasklist/index.html
    
-   http://localhost:8080/tasks
+   http://localhost:8181/tasks
 
 # Resources
 
