@@ -14,8 +14,8 @@ public class TaskServiceImpl implements TaskService {
     private Map<Integer, Task> tasks = new HashMap<>();
 
     public TaskServiceImpl() {
-        tasks.put(1, new Task(1, "Buy some Coffee", "The good stuff"));
-        tasks.put(2, new Task(2, "Finish demo", "JAX-RS issues"));
+        tasks.put(1, Task.builder().id(1).title("Buy some Coffee").description("The good stuff").build());
+        tasks.put(2, Task.builder().id(2).title("Finish demo").description("JAX-RS issues").build());
     }
     
     @Override

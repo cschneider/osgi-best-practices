@@ -40,7 +40,7 @@ public class TaskServiceImplTest {
     @Test
     public void testAdd() {
         assertThat(taskService.getAll().size(), equalTo(2));
-        Task task = new Task(3, "Task id", "desc");
+        Task task = Task.builder().id(3).title("Task id").description("desc").build();
         taskService.addOrUpdate(task);
         Collection<Task> tasks = taskService.getAll();
         assertThat(tasks.size(), equalTo(3));

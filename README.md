@@ -9,6 +9,7 @@ The design follows current best practices for OSGi R7 applications.
 
 * parent - Defines common dependencies and the build of OSGi bundles
 * backend - Tasklist api, OSGi service impl and REST service. In a full blown application you might want several bundles here
+* halbrowser - Repackaged halbrowser for OSGi
 * ui - Static Angular UI that uses the REST backend
 * app - Defines the index and application assembly using bndrun
 
@@ -31,9 +32,9 @@ Download and run Apache Karaf 4.2.6
     
 # Test
 
-   http://localhost:8080/tasklist/index.html
-   
-   http://localhost:8080/tasks
+* [Entry page with links to all services](http://localhost:8080/ui/index.html) 
+* [Tasklist UI](http://localhost:8080/tasklist/index.html)
+* [Raw REST endpoint](http://localhost:8080/tasks)
 
 # Resources
 
