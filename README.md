@@ -1,5 +1,7 @@
 # osgi-best-practices
 
+![Java CI](https://github.com/cschneider/osgi-best-practices/workflows/Java%20CI/badge.svg)
+
 OSGi application with an angular UI, REST Service and OSGi service.
 The design follows current best practices for OSGi R7 applications. 
 
