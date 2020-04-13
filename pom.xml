@@ -136,7 +136,7 @@
         <module>backend</module>
         <module>app</module>
         <module>ui</module>
-        <module>examtest</module>
+        <!--  <module>examtest</module>-->
         <module>halbrowser</module>
         <module>swagger-ui</module>
     </modules>
