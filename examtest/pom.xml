@@ -10,8 +10,8 @@
     <artifactId>examtest</artifactId>
 
     <properties>
-        <dependency.karaf.version>4.2.7</dependency.karaf.version>
-        <exam.version>4.13.0</exam.version>
+        <dependency.karaf.version>4.2.8</dependency.karaf.version>
+        <exam.version>4.13.3</exam.version>
     </properties>
 
     <dependencies>
@@ -60,7 +60,6 @@
             <version>1</version>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
 
     <build>
@@ -81,7 +80,7 @@
             </plugin>
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.9</version>
+                <version>2.22.2</version>
                 <configuration>
                     <systemPropertyVariables>
                         <pax.exam.karaf.version>${dependency.karaf.version}</pax.exam.karaf.version>
