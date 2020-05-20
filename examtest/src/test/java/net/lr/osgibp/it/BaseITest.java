@@ -14,7 +14,6 @@ import org.ops4j.pax.exam.Option;
 import org.ops4j.pax.exam.options.MavenArtifactProvisionOption;
 import org.ops4j.pax.exam.options.MavenArtifactUrlReference;
 import org.ops4j.pax.exam.options.MavenUrlReference;
-import org.ops4j.pax.exam.options.extra.RepositoryOption;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
