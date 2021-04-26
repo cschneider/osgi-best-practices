@@ -34,9 +34,9 @@ Download and run Apache Karaf 4.2.6
     
 # Test
 
-* [Entry page with links to all services](http://localhost:8080/ui/index.html) 
-* [Tasklist UI](http://localhost:8080/tasklist/index.html)
-* [Raw REST endpoint](http://localhost:8080/tasks)
+* [Entry page with links to all services](http://localhost:8181/ui/index.html) 
+* [Tasklist UI](http://localhost:8181/tasklist/index.html)
+* [Raw REST endpoint](http://localhost:8181/tasks)
 
 # Resources
 
