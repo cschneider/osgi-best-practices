@@ -1,0 +1,18 @@
+{
+    ":configurator:resource-version" : 1,
+    ":configurator:symbolic-name" : "net.lr.osgibp.backend",
+    ":configurator:version" : "1.0.0",
+
+    "org.apache.felix.hc.core.impl.servlet.HealthCheckExecutorServlet~alive": {
+        "servletPath" : "/system/alive",
+        "tags" : ["systemalive"]
+    },
+    "org.apache.felix.hc.core.impl.servlet.HealthCheckExecutorServlet~ready": {
+        "servletPath" : "/system/ready",
+        "tags" : ["systemready"]
+    },
+
+    "org.apache.aries.jax.rs.whiteboard.default": {
+      "default.web": false
+    }
+}

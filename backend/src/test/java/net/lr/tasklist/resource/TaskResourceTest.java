@@ -24,6 +24,8 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
+import com.codahale.metrics.MetricRegistry;
+
 import net.lr.tasklist.model.Task;
 import net.lr.tasklist.model.TaskService;
 
@@ -39,6 +41,9 @@ public class TaskResourceTest {
     TaskService taskService;
     
     @Mock
+    MetricRegistry metricRegistry;
+    
+    @Mock
     UriInfo uriInfo;
     
     @InjectMocks
@@ -49,6 +54,7 @@ public class TaskResourceTest {
     @Before
     public void before() {
         task1 = task1();
+        taskRes.uriInfo = uriInfo;
     }
 
     @Test
@@ -111,6 +117,6 @@ public class TaskResourceTest {
     }
 
     private Task task1() {
-        return new Task(1, "Test", "desc");
+        return Task.builder().id(1).title("Task id").description("desc").build();
     }
 }
