@@ -45,7 +45,7 @@ Download and run Apache Karaf 4.2.6
 * [Some hints to boost your productivity with declarative services](https://liquid-reality.de/2016/09/26/hints-ds.html)
 * [Bnd maven plugins documentation](https://github.com/bndtools/bnd/tree/master/maven)
 * [OSGi R7 Highlights JAX-RS Whiteboard](https://blog.osgi.org/2018/03/osgi-r7-highlights-jax-rs-whiteboard.html)
-* [Best practices for Restul apis](https://blog.mwaysolutions.com/2014/06/05/10-best-practices-for-better-restful-api/)
+* [Best practices for Restful apis](https://blog.mwaysolutions.com/2014/06/05/10-best-practices-for-better-restful-api/)
 * [Pure Annotation-Driven Bundle Development](https://virtual.osgiusers.org/2018/10/pure-annotation-driven-dev)
 
 ## Testing
